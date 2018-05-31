@@ -9,7 +9,17 @@ Assets:
 
     php bin/console assets:install --symlink
 
-Use in you template, override the block body from base:
+Extends in your template:
 
     {% extends '@UspdevBootstrapDashboard/base.html.twig' %}
 
+Blocks available to override:
+
+ - title
+ - system_name
+ - search
+ - user
+ - sidebar
+ - body
+ - javascripts (it is a good idea to use: {{ parent() }})
+ - stylesheets (it is a good idea to use: *{{ parent() }}*)
