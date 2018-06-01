@@ -70,5 +70,4 @@ An example that can be inserted in your base.html.twig:
             </div>   
         {% endfor %}
 
-        {{ parent() }}
     {% endblock %}
